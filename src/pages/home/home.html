@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Faxina App</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <p>
+        Hoje em dia, praticamente todas as casas precisam de um faxina para deixar tudo em ordem, pois são inúmeras as
+        tarefas domésticas para se realizar durante a semana, e com a correria do dia a dia, não há quem tenha tempo
+        suficiente para cuidar de tudo isso!</p>
+        <br />
+        <p>
+        Encontrar alguém que possa lavar a louça, passar a roupa, limpar as janelas e tirar o pó dos móveis nunca foi
+        tão fácil.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-col style="text-align: center">
+    <button ion-button color="secondary" (click)="contratar()">Contratar</button>
+  </ion-col>
+  <ion-col style="text-align: center">
+    <button ion-button color="danger" (click)="novo()">Cadastrar</button>      
+  </ion-col>
+  
+  
+</ion-content>
