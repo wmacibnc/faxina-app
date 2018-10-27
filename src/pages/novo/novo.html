@@ -8,27 +8,29 @@
 </ion-header>
 
 <ion-content>
-
-    <ion-list>
-
-        <ion-item>
-          <ion-label stacked>Nome</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label stacked>Senha</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-              <ion-label floating>CEP:</ion-label>
-              <ion-input type="text"  [(ngModel)]="cep" (ngModelChange)="obterEndereco(this)"></ion-input>
-            </ion-item>
-            <br />
-            <p><b>Endereço:</b> {{endereco}}</p>
-            <ion-col style="text-align: center">
-                <button ion-button color="primary" (click)="finalizar()">Finalizar</button>
-              </ion-col>
-      </ion-list>    
+  
+  <ion-list>
+    
+    <ion-item>
+      <ion-label stacked floating>Nome</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label stacked floating>Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>CEP:</ion-label>
+      <ion-input type="text"  [(ngModel)]="cep" (ngModelChange)="obterEndereco(this)"></ion-input>
+    </ion-item>
+    <br />
+    <ion-item>
+      <p><b>Endereço:</b> {{endereco}}</p>
+    </ion-item>
+    <ion-col style="text-align: center">
+      <button ion-button color="primary" (click)="finalizar()">Finalizar</button>
+    </ion-col>
+  </ion-list>    
 </ion-content>

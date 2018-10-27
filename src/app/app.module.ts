@@ -13,6 +13,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
 
+import { NgCalendarModule  } from 'ionic2-calendar';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { HttpModule } from '@angular/http';
     NovoPage
   ],
   imports: [
+    NgCalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
